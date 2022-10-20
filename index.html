@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <section>Highscores</section>
+        <section id="timer">
+            <div id="time-left">Time Remaining: 0</div>
+        </section>
+
+    </header>
+
+    <!--Start Game-->
+    <section id="start">
+        <h1>Grace's JavaScript Quiz</h1>
+        <section id="rules">
+            <h3>Rules:</h3>
+            <section id="ruleList">
+                <p>Rule 1</p>
+                <p>Rule 2</p>
+                <p>Rule 3</p>
+                <p>Rule 4</p>
+            </section>
+        </section>
+        <button id="startButton">START GAME</button>
+    </section>
+
+
+    <!--Game in progress-->
+    <section id="in-progress">
+        <!--Questions-->
+        <article class="question">Insert question here?</article>
+        <section class="answerSet"">
+            <button id="correctAnswer">sample answer</button>
+            <button id="wrongAnswer">sample answer</button>
+            <button id="wrongAnswer">sample answer</button>
+            <button id="wrongAnswer">sample answer</button>
+        </section>
+
+
+        <!--Alerts-->
+        <article class="alert" id="correct">Correct!</article>
+        <article class="alert" id="wrong">Wrong!</article>
+
+    </section>
+
+
+
+
+    <!--Game Over-->
+
+    <section id="game-over">
+        <h2>GAME OVER</h2>
+        <p>Your final score is</p>
+        <p id="score">0</p>
+        <p>Enter intials:</p>
+        <input type="text" id="initials" name="initials" placeholder="GY">
+        <button>Submit</button>
+    </section>
+
+
+
+    <!--High Score-->
+    <section id="high-score">
+        <h2>Scoreboard</h2>
+        <ol>
+            <li>sample</li>
+        </ol>
+    </section>
+
+
+
+    <footer>
+        <span> &copy;2022 Grace Yao</span>
+    </footer>
+    <link rel="stylesheet" href="./assets/javascript.js">
+</body>
+
+</html>

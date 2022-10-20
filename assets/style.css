@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*Global Styles*/
+
+body {
+    margin: 1rem;
+    font-family: "Century Gothic", Roboto, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    background-color: rgb(0, 167, 139);
+    border-radius:  4px;
+    border:none;
+    padding: 15px 32px;
+    cursor:pointer;
+    color: white;
+
+}
+
+/*Start Game*/
+#start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rule-list {
+    line-height: .5rem;
+}
+
+#startButton {
+   
+    font-weight:bold;
+}
+
+#startButton:hover {
+}
+
+
+/*Game in progress*/
+
+
+/*Game Over*/
+
+
+/*High Scores*/
