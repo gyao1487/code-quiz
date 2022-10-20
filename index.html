@@ -23,34 +23,54 @@
     <!--Start Game-->
     <section id="start">
         <h1>Grace's JavaScript Quiz</h1>
+        <button id="startButton">START GAME</button>
         <section id="rules">
             <h3>Rules:</h3>
-            <section id="ruleList">
-                <p>Rule 1</p>
-                <p>Rule 2</p>
-                <p>Rule 3</p>
-                <p>Rule 4</p>
-            </section>
+            <ol id="ruleList">
+                <li>Answer as many questions correctly as you can before the timer runs out.</li>
+                <li>If you answer a question incorrectly, 10 seconds are subtracked from the timer</li>
+                <li>The game is over when you answer all the questions, or when the timer reaches 0</li>
+                <li>Have fun! (or not, I can't tell you what to do)</li>
+            </ol>
         </section>
-        <button id="startButton">START GAME</button>
+
     </section>
 
 
     <!--Game in progress-->
     <section id="in-progress">
         <!--Questions-->
-        <article class="question">Insert question here?</article>
-        <section class="answerSet"">
-            <button id="correctAnswer">sample answer</button>
-            <button id="wrongAnswer">sample answer</button>
-            <button id="wrongAnswer">sample answer</button>
-            <button id="wrongAnswer">sample answer</button>
+        <section class="question">
+            <h4>Inside which HTML element do we put the JavaScript? </h3>
+                <section class="answerSet 1">
+                    <button id="correctAnswer"> &#60;script&#62; </button>
+                    <button id="wrongAnswer">sample answer</button>
+                    <button id="wrongAnswer">sample answer</button>
+                    <button id="wrongAnswer">sample answer</button>
+                </section>
         </section>
 
+        <section class="question">
+            <h4>What will this code return? <code>boolean(3&#60;7)</code> </h3>
+                <section class="answerSet 2">
+                    <button id="correctAnswer"> true </button>
+                    <button id="wrongAnswer">sample answer</button>
+                    <button id="wrongAnswer">sample answer</button>
+                    <button id="wrongAnswer">sample answer</button>
+                </section>
+        </section>
 
         <!--Alerts-->
-        <article class="alert" id="correct">Correct!</article>
-        <article class="alert" id="wrong">Wrong!</article>
+        <section class = "alert" id="correct">
+            <div class="line"></div>
+            <p class="alerttxt">Correct!</p>
+        </section>
+        <section class = "alert" id="wrong">
+            <div class="line"></div>
+            <p class="alerttxt">Wrong!</p>
+        </section>
+       
+
 
     </section>
 
@@ -61,11 +81,10 @@
 
     <section id="game-over">
         <h2>GAME OVER</h2>
-        <p>Your final score is</p>
-        <p id="score">0</p>
+        <p id = score>Your final score is 0</p>
         <p>Enter intials:</p>
         <input type="text" id="initials" name="initials" placeholder="GY">
-        <button>Submit</button>
+        <button id="submit">Submit</button>
     </section>
 
 
