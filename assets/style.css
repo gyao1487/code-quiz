@@ -7,6 +7,13 @@
 body {
     margin: 1rem;
     font-family: "Century Gothic", Roboto, Arial, sans-serif;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -73,11 +80,12 @@ code {
 }
 .answerSet button {
     font-size:12px;
-    width: 75%;
+    width: 100%;
     margin-top: 5px;
     padding-left: 20px;
     display:flex;
     flex-direction: column;
+    
 }
 .line {
     margin-top: 10px;
@@ -96,7 +104,6 @@ code {
     
 }
 /*Game Over*/
-#-
 
 #score {
 
@@ -106,3 +113,6 @@ code {
 
 }
 /*High Scores*/
+
+
+/*Footer*/
