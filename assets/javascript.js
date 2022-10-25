@@ -23,7 +23,7 @@ function startGame() {
 function timer() {
     var timeInterval = setInterval(function () {
         //questionIndex === number of questions total
-        if (questionIndex === 4) {
+        if (questionIndex === 10) {
             clearInterval(timeInterval);
             timerEl.textContent = '';
             gameOver();
@@ -86,7 +86,7 @@ var questions = [
     {
         question: "JavaScript is a _______-side programming language",
         choices: ['Client','Server','Client & Server','None of the above'],
-        answer: 'Math.max(x, y)'
+        answer: 'Client & Server'
     },
     {
         question: "Which of the following function creates a new array from calling a function for every array element?",
@@ -100,9 +100,9 @@ var questions = [
     },
     {
         question: "What is the correct JavaScript syntax to change the content of a 'p' element with an id 'demo'",
-        choices: ['Math.ceil(x, y)', 'Math.high(x, y)', 'Math.max(x, y)', 'Math.greatest(x, y)'],
-        answer: 'Math.max(x, y)'
-    },
+        choices: ['document.querySelector("p").innerHTML"Hello World!";', 'document.getElement("demo").innerHTML = "HelloWorld!"', 'document.getElementById("demo").innerHTML = "Hello World!"', '#demo.innerHTML = "Hello World!"'],
+        answer: 'document.getElementById("demo").innerHTML = "Hello World!"'
+    }
 ]
 
 function displayQuestions() {
@@ -167,6 +167,7 @@ var submitButton = document.getElementById('submit');
 
 function gameOver() {
     alertBox.style.display ="none";
+    game.style.display = "none";
     endScreen.style.display = "inline-block";
     showScore ();
   
@@ -216,7 +217,6 @@ function showHighScorePage () {
 
 const highScoresList = document.getElementById('highScores')
 function renderHighscores () {
-  
     highScores.forEach (score => {
         var li = document.createElement('li');
         li.textContent = score.score + '           ' + score.initials;
