@@ -199,7 +199,7 @@ function saveScore() {
     localStorage.setItem('highScores',JSON.stringify(highScores));
 
     console.log(highScores);
-    window.location.assign("/")
+    window.location.reload();
 }
 
 
