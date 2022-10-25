@@ -53,9 +53,9 @@ code {
 
 /*Start Game*/
 #highscore-button {
-    color:  rgb(10, 187, 119);
+    color: rgb(10, 187, 119);
     background-color: white;
-    padding:0;
+    padding: 0;
     font-size: 14px;
 
 }
@@ -68,8 +68,8 @@ code {
 }
 
 #ruleList li {
-    line-height:20px;
-    font-size:14px;
+    line-height: 20px;
+    font-size: 14px;
 }
 
 #startButton {
@@ -81,21 +81,17 @@ code {
 /*Game in progress*/
 
 #gameprogress {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: left;
+    margin: 15px;
+    max-width: 620px;
 }
 
 #gameprogress button {
-margin-bottom: 10px
+    margin-bottom: 10px;
+    min-width: 620px;
 }
-
-
-/*code to hide as default
-.question {
-    display:none;
-}
-*/
 
 .question h4 {
     margin-bottom: 30px;
@@ -148,6 +144,11 @@ margin-bottom: 10px
     justify-content: center;
 }
 
+#scoreboard li {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
 /*Footer*/
 .footer {
     position: fixed;
@@ -159,5 +160,35 @@ margin-bottom: 10px
     justify-content: center;
     background-color: white;
     font-size: 14px;
-    color:rgb(10, 187, 119);
+    color: rgb(10, 187, 119);
+}
+
+
+
+@media (max-width: 690px) {
+    #gameprogress {
+        max-width: 500px;
+        
+    }
+
+    #gameprogress button {
+        max-width: 500px;
+        min-width: 0;
+    }
+}
+
+
+@media (max-width: 500px) {
+    #gameprogress {
+        max-width: 300px;
+    }
+
+    #gameprogress h2 {
+        font-size: 20px
+    }
+
+    #gameprogress button {
+        max-width: 300px;
+        min-width: 0;
+    }
 }

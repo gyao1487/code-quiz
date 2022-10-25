@@ -219,7 +219,7 @@ const highScoresList = document.getElementById('highScores')
 function renderHighscores () {
     highScores.forEach (score => {
         var li = document.createElement('li');
-        li.textContent = score.score + '           ' + score.initials;
+        li.textContent =score.initials + '                                ' + score.score;
         highScoresList.append(li)
     })}
 
