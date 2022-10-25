@@ -22,7 +22,8 @@ function startGame() {
 //Function for Timer
 function timer() {
     var timeInterval = setInterval(function () {
-        if (questionIndex === 3) {
+        //questionIndex === number of questions total
+        if (questionIndex === 4) {
             clearInterval(timeInterval);
             timerEl.textContent = '';
             gameOver();
@@ -58,16 +59,50 @@ var questions = [
         answer: '<script>'
     },
     {
-        question: "what is 7 + 2",
-        choices: ['2', '3', '4', '9'],
-        answer: '9'
+        question: "How do you write 'hello world' in an alert box?",
+        choices: ['messageBox("hello world")', 'message("hello world")', 'alert("hello world")', 'alertBox("hello world")'],
+        answer: 'alert("hello world")'
     },
     {
-        question: "what is 2 + 10",
-        choices: ['2', '3', '4', '12'],
-        answer: '12'
-    }
-
+        question: "What is the correct syntax for a FOR loop?",
+        choices: ['for (i<=5; i++)', 'for (i=0; i <= 5; i++)', 'for (i = 0; i <= 5)', 'for i = 1 to 5'],
+        answer: 'for (i=0; i <= 5; i++)'
+    },
+    {
+        question: "What is the correct way to write a JavaScript array?",
+        choices: ['var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")', 'var colors = "red", "green", "blue"', 'var colors = ["red", "green", "blue"]', 'var colors = (1:"red", 2:"green", 3:"blue")'],
+        answer: 'var colors = ["red", "green", "blue"]'
+    },
+    {
+        question: "How do you find the number with the highest value of x and y?",
+        choices: ['Math.ceil(x, y)', 'Math.high(x, y)', 'Math.max(x, y)', 'Math.greatest(x, y)'],
+        answer: 'Math.max(x, y)'
+    },
+    {
+        question: "Which operator is used to assign a value to a variable?",
+        choices: [':','-','.','='],
+        answer: '='
+    },
+    {
+        question: "JavaScript is a _______-side programming language",
+        choices: ['Client','Server','Client & Server','None of the above'],
+        answer: 'Math.max(x, y)'
+    },
+    {
+        question: "Which of the following function creates a new array from calling a function for every array element?",
+        choices: ['join()', 'map()', 'push()', 'newArray()'],
+        answer: 'Math.max(x, y)'
+    },
+    {
+        question: "Which of the following is a valid JavaScript function?",
+        choices: ['var myFunction = function myFunction { };', 'myFunction function () { }', 'function myFunction = { }', 'function myFunction () { }'],
+        answer: 'function myFunction () { }'
+    },
+    {
+        question: "What is the correct JavaScript syntax to change the content of a 'p' element with an id 'demo'",
+        choices: ['Math.ceil(x, y)', 'Math.high(x, y)', 'Math.max(x, y)', 'Math.greatest(x, y)'],
+        answer: 'Math.max(x, y)'
+    },
 ]
 
 function displayQuestions() {
@@ -179,17 +214,22 @@ function showHighScorePage () {
     renderHighscores ();
 }
 
-const highScoresList = document.getElementById(highScores)
+const highScoresList = document.getElementById('highScores')
 function renderHighscores () {
   
     highScores.forEach (score => {
         var li = document.createElement('li');
-        li.textContent = score.score +  score.initials;
+        li.textContent = score.score + '           ' + score.initials;
         highScoresList.append(li)
     })}
 
     console.log(highScores)
-// Home Button
+
+// Go Back Button
+const goBackButton = document.querySelector("#go-back");
+goBackButton.addEventListener("click",function(){
+    window.location.reload();
+})
 
 
 

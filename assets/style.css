@@ -39,8 +39,9 @@ button:hover {
 
 li {
     line-height: 20px;
-    font-size: 13px;
+    font-size: 16 px;
 }
+
 
 code {
     background-color: #eee;
@@ -51,6 +52,14 @@ code {
 }
 
 /*Start Game*/
+#highscore-button {
+    color:  rgb(10, 187, 119);
+    background-color: white;
+    padding:0;
+    font-size: 14px;
+
+}
+
 #start {
     display: flex;
     flex-direction: column;
@@ -58,7 +67,10 @@ code {
     align-items: center;
 }
 
-
+#ruleList li {
+    line-height:20px;
+    font-size:14px;
+}
 
 #startButton {
     font-weight: bold;
@@ -66,8 +78,18 @@ code {
 
 
 
-
 /*Game in progress*/
+
+#gameprogress {
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#gameprogress button {
+margin-bottom: 10px
+}
+
 
 /*code to hide as default
 .question {
@@ -135,4 +157,7 @@ code {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    font-size: 14px;
+    color:rgb(10, 187, 119);
 }
