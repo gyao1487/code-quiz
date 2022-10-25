@@ -5,7 +5,7 @@ The primary goal of this project is to create an application that can test your 
 
 ## Installation
 
-You can open the webpage in your web browser using this URL: 
+You can open the webpage in your web browser using this URL: https://gyao1487.github.io/code-quiz/
 
 ## Usage
 Features implemented on this webpage:
